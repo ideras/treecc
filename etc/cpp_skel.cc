@@ -58,7 +58,7 @@ YYNODESTATE *YYNODESTATE::state__ = 0;
 		type field; \
 	}
 #define	YYNODESTATE_ALIGN_FOR_TYPE(type)	\
-	((unsigned)(unsigned long)(&(((struct _YYNODESTATE_align_##type *)0)->field)))
+	offsetof(_YYNODESTATE_align_##type, field)
 #define	YYNODESTATE_ALIGN_MAX(a,b)	\
 	((a) > (b) ? (a) : (b))
 #define	YYNODESTATE_ALIGN_MAX3(a,b,c) \

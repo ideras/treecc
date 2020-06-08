@@ -1012,6 +1012,11 @@ static void WriteCPPHeaders(TreeCCContext *context)
 		{
 			TreeCCStreamSourceTop(stream);
 			TreeCCStreamPrint(stream, "\n");
+			if(!context->use_gc_allocator)
+			{
+				TreeCCStreamPrint(stream, "#include <cstddef>\n");
+				TreeCCStreamPrint(stream, "\n");
+			}
 		}
 		if(context->namespace)
 		{

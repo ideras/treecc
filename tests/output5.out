@@ -320,6 +320,8 @@ protected:
 #endif
 /* output.c.  Generated automatically by treecc */
 
+#include <cstddef>
+
 #define YYNODESTATE_REENTRANT 1
 #define YYNODESTATE_TRACK_LINES 1
 #define YYNODESTATE_USE_ALLOCATOR 1
@@ -384,7 +386,7 @@ YYNODESTATE *YYNODESTATE::state__ = 0;
 		type field; \
 	}
 #define	YYNODESTATE_ALIGN_FOR_TYPE(type)	\
-	((unsigned)(unsigned long)(&(((struct _YYNODESTATE_align_##type *)0)->field)))
+	offsetof(_YYNODESTATE_align_##type, field)
 #define	YYNODESTATE_ALIGN_MAX(a,b)	\
 	((a) > (b) ? (a) : (b))
 #define	YYNODESTATE_ALIGN_MAX3(a,b,c) \
@@ -598,7 +600,7 @@ long YYNODESTATE::currLinenum() const
 }
 
 #endif
-#line 282 "output.c"
+#line 284 "output.c"
 intnum *YYNODESTATE::intnumCreate(int num)
 {
 	void *buf__ = this->alloc(sizeof(intnum));
@@ -706,7 +708,7 @@ void binary::infer_type()
 		type = int_type;
 	}
 }
-#line 390 "output.c"
+#line 392 "output.c"
 
 int binary::isA(int kind) const
 {
@@ -739,7 +741,7 @@ void unary::infer_type()
 	expr->infer_type();
 	type = expr->type;
 }
-#line 423 "output.c"
+#line 425 "output.c"
 
 int unary::isA(int kind) const
 {
@@ -771,7 +773,7 @@ void intnum::infer_type()
 {
 	type = int_type;
 }
-#line 455 "output.c"
+#line 457 "output.c"
 
 int intnum::isA(int kind) const
 {
@@ -906,7 +908,7 @@ void power::infer_type()
 
 	type = expr1->type;
 }
-#line 590 "output.c"
+#line 592 "output.c"
 
 int power::isA(int kind) const
 {

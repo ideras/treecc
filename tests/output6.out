@@ -300,6 +300,8 @@ void infer_type(expression * e);
 #endif
 /* output.c.  Generated automatically by treecc */
 
+#include <cstddef>
+
 #define YYNODESTATE_TRACK_LINES 1
 #define YYNODESTATE_USE_ALLOCATOR 1
 #line 1 "cpp_skel.cc"
@@ -363,7 +365,7 @@ YYNODESTATE *YYNODESTATE::state__ = 0;
 		type field; \
 	}
 #define	YYNODESTATE_ALIGN_FOR_TYPE(type)	\
-	((unsigned)(unsigned long)(&(((struct _YYNODESTATE_align_##type *)0)->field)))
+	offsetof(_YYNODESTATE_align_##type, field)
 #define	YYNODESTATE_ALIGN_MAX(a,b)	\
 	((a) > (b) ? (a) : (b))
 #define	YYNODESTATE_ALIGN_MAX3(a,b,c) \
@@ -577,7 +579,7 @@ long YYNODESTATE::currLinenum() const
 }
 
 #endif
-#line 281 "output.c"
+#line 283 "output.c"
 void *expression::operator new(size_t size__)
 {
 	return YYNODESTATE::getState()->alloc(size__);
@@ -852,7 +854,7 @@ void infer_type(expression * e__)
 			
 				e->type = e->expr1->type;
 			}
-#line 556 "output.c"
+#line 558 "output.c"
 		}
 		break;
 
@@ -882,7 +884,7 @@ void infer_type(expression * e__)
 					e->type = int_type;
 				}
 			}
-#line 586 "output.c"
+#line 588 "output.c"
 		}
 		break;
 
@@ -895,7 +897,7 @@ void infer_type(expression * e__)
 				infer_type(e->expr);
 				e->type = e->expr->type;
 			}
-#line 599 "output.c"
+#line 601 "output.c"
 		}
 		break;
 
@@ -906,7 +908,7 @@ void infer_type(expression * e__)
 			{
 				e->type = int_type;
 			}
-#line 610 "output.c"
+#line 612 "output.c"
 		}
 		break;
 
