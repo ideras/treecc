@@ -96,6 +96,11 @@ if(CMAKE_C_COMPILER_ID MATCHES "GNU|Clang")
     add_compile_options(-Wno-unused-parameter -Wno-unused-but-set-variable -Wno-unused-function)
 endif()
 
+if(MSVC)
+    add_compile_definitions(_CRT_SECURE_NO_WARNINGS _CRT_NONSTDC_NO_WARNINGS)
+    add_compile_options(/wd4267)
+endif()
+
 add_library(treecc_static STATIC ${LIBTREECC_SOURCES} ${LIBTREECC_HEADERS})
 set_target_properties(treecc_static PROPERTIES OUTPUT_NAME treecc)
 
