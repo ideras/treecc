@@ -25,3 +25,4 @@ ylwrap
 INSTALL
 doc/texinfo.tex
 *~
+**/build*/

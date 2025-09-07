@@ -1,0 +1,103 @@
+/* config.h.cmake.in - CMake configuration header template */
+
+/* Define to 1 if you have the 'access' function. */
+#cmakedefine HAVE_ACCESS 1
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#cmakedefine HAVE_INTTYPES_H 1
+
+/* Define to 1 if you have the 'memcmp' function. */
+#cmakedefine HAVE_MEMCMP 1
+
+/* Define to 1 if you have the 'memcpy' function. */
+#cmakedefine HAVE_MEMCPY 1
+
+/* Define to 1 if you have the 'qsort' function. */
+#cmakedefine HAVE_QSORT 1
+
+/* Define to 1 if you have the 'stat' function. */
+#cmakedefine HAVE_STAT 1
+
+/* Define to 1 if you have the <stdarg.h> header file. */
+#cmakedefine HAVE_STDARG_H 1
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#cmakedefine HAVE_STDINT_H 1
+
+/* Define to 1 if you have the <stdio.h> header file. */
+#cmakedefine HAVE_STDIO_H 1
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#cmakedefine HAVE_STDLIB_H 1
+
+/* Define to 1 if you have the 'strchr' function. */
+#cmakedefine HAVE_STRCHR 1
+
+/* Define to 1 if you have the <strings.h> header file. */
+#cmakedefine HAVE_STRINGS_H 1
+
+/* Define to 1 if you have the <string.h> header file. */
+#cmakedefine HAVE_STRING_H 1
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#cmakedefine HAVE_SYS_STAT_H 1
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#cmakedefine HAVE_SYS_TYPES_H 1
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#cmakedefine HAVE_UNISTD_H 1
+
+/* Define to 1 if you have the <varargs.h> header file. */
+#cmakedefine HAVE_VARARGS_H 1
+
+/* Define to 1 if you have the 'vfprintf' function. */
+#cmakedefine HAVE_VFPRINTF 1
+
+/* Define to 1 if you have the 'vsnprintf' function. */
+#cmakedefine HAVE_VSNPRINTF 1
+
+/* Define to 1 if you have the 'vsprintf' function. */
+#cmakedefine HAVE_VSPRINTF 1
+
+/* Define to 1 if you have the '_vsnprintf' function. */
+#cmakedefine HAVE__VSNPRINTF 1
+
+/* Define to 1 if you have the <memory.h> header file. */
+#cmakedefine HAVE_MEMORY_H 1
+
+/* Name of package */
+#define PACKAGE "treecc"
+
+/* Define to the address where bug reports for this package should be sent. */
+#define PACKAGE_BUGREPORT "dotgnu-pnet@gnu.org"
+
+/* Define to the full name of this package. */
+#define PACKAGE_NAME "GNU Treecc"
+
+/* Define to the full name and version of this package. */
+#define PACKAGE_STRING "GNU Treecc @PROJECT_VERSION@"
+
+/* Define to the one symbol short name of this package. */
+#define PACKAGE_TARNAME "treecc"
+
+/* Define to the home page for this package. */
+#define PACKAGE_URL "https://www.gnu.org/software/treecc/"
+
+/* Define to the version of this package. */
+#define PACKAGE_VERSION "@PROJECT_VERSION@"
+
+/* Define to 1 if all of the C89 standard headers exist (not just the ones
+   required in a freestanding environment). This macro is provided for
+   backward compatibility; new code need not use it. */
+#define STDC_HEADERS 1
+
+/* Version number of package */
+#define VERSION "@PROJECT_VERSION@"
+
+/* Define to 1 if 'lex' declares 'yytext' as a 'char *' by default, not a
+   'char[]'. */
+#define YYTEXT_POINTER 1
+
+/* Define to empty if 'const' does not conform to ANSI C. */
+/* #undef const */
