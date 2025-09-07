@@ -593,7 +593,7 @@ is perfectly valid.
 
 @c -----------------------------------------------------------------------
 
-@node Syntax, Nodes, Invoking Treecc, Top
+@node Syntax, Line Tracking, Invoking Treecc, Top
 @chapter Syntax of input files
 @cindex Syntax
 
@@ -1311,7 +1311,7 @@ This is typically used as follows:
 
 @c -----------------------------------------------------------------------
 
-@node Line Tracking, Output APIs, Changing Files, Top
+@node Line Tracking, Output APIs, Syntax, Top
 @chapter Tracking line numbers in source files
 @cindex Line tracking
 
@@ -1336,7 +1336,7 @@ for more information.
 
 @c -----------------------------------------------------------------------
 
-@node Output APIs, C Language, Line Tracking, Top
+@node Output APIs, Full Expression Example, Line Tracking, Top
 @chapter API's available in the generated output
 @cindex Output APIs
 
@@ -2822,7 +2822,7 @@ define these methods.
 
 @c -----------------------------------------------------------------------
 
-@node Full Expression Example, EBNF Syntax, Python Language, Top
+@node Full Expression Example, EBNF Syntax, Output APIs, Top
 @appendix Full expression example code
 @cindex Full expression example
 

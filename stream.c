@@ -329,7 +329,7 @@ int TreeCCStreamFlushStdio(TreeCCStream *stream, FILE *file)
 	{
 		if(buffer == stream->lastBuf)
 		{
-			if(fwrite(buffer->data, 1, stream->posn, file) != stream->posn)
+			if(fwrite(buffer->data, 1, stream->posn, file) != (size_t)stream->posn)
 			{
 				return 0;
 			}

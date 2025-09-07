@@ -394,7 +394,7 @@ static int BaseTypeOption(TreeCCContext *context, char *value, int flag)
 	{
 		return TREECC_OPT_NEED_VALUE;
 	}
-	else if(value == '\0')
+	else if(*value == '\0')
 	{
 		context->baseType = 0;
 		return TREECC_OPT_OK;

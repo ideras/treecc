@@ -92,6 +92,10 @@ set(LIBTREECC_HEADERS
     system.h
 )
 
+if(CMAKE_C_COMPILER_ID MATCHES "GNU|Clang")
+    add_compile_options(-Wno-unused-parameter -Wno-unused-but-set-variable -Wno-unused-function)
+endif()
+
 add_library(treecc_static STATIC ${LIBTREECC_SOURCES} ${LIBTREECC_HEADERS})
 set_target_properties(treecc_static PROPERTIES OUTPUT_NAME treecc)
 
